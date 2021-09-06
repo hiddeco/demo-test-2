@@ -1,0 +1,16 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: podinfo-patch
+  namespace: flux-system
+spec:
+  filterTags:
+    extract: $ts
+    pattern: ^5.2.1-patch+-(?P<ts>[0-9]+)
+  imageRepositoryRef:
+    name: podinfo-fork
+  policy:
+    numerical:
+      order: asc
+
