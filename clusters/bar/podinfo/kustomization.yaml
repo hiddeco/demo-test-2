@@ -7,5 +7,5 @@ resources:
   - podinfo-patch-policy.yaml
 images:
   - name: ghcr.io/stefanprodan/podinfo
-    newName: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "flux-system:podinfo-patch:name"}
-    newTag: 5.2.1 # {"$imagepolicy": "flux-system:podinfo-patch:tag"}
+    newName: ghcr.io/hiddeco/podinfo # {"$imagepolicy": "flux-system:podinfo-patch:name"}
+    newTag: 5.2.1-patch-1630930968 # {"$imagepolicy": "flux-system:podinfo-patch:tag"}
